@@ -7625,7 +7625,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    * Each item in the array will be called sequentially.
 	    */
 	    Twig.async.forEach = function forEachAsync(arr, callback) {
-	        var len = arr.length;
+	        var len = typeof arr === 'undefined' ? 0 : arr.length;
 	        var index = 0;
 
 	        function next(value) {
